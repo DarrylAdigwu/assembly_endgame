@@ -90,7 +90,7 @@ section > div.status.incorrect {
 }
 
 section.languages {
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
