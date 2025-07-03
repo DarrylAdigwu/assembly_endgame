@@ -80,7 +80,7 @@ function App() {
   })
 
     return (
-      <span key={letter} onClick={() => addGuess(letter)} className={keyColors}>
+      <span key={letter} onClick={() => addGuess(letter)} className={`${keyColors} keyLetters`}>
         {letter.toUpperCase()}
       </span>
     )

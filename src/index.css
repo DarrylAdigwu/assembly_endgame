@@ -145,6 +145,12 @@ section.keyboard > span {
   width: 40px;
   border-radius: 4px;
 }
+
+section.keyboard > span:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 1);
+}
+
 section.keyboard > span.right {
   background-color: #10A95B;
 }
