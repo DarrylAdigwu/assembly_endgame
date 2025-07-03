@@ -17,10 +17,9 @@ body {
 
 main {
   display: flex;
-  justify-self: center;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90%;
+  width: 90vw;
   max-width: 480px;
   height: 60vh;
   min-height: fit-content;
