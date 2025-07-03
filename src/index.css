@@ -6,26 +6,33 @@
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: #282726;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 main {
   display: flex;
+  justify-self: center;
   flex-wrap: wrap;
   justify-content: center;
-  width: 480px;
-  min-height: 60vh;
+  width: 90%;
+  max-width: 480px;
+  height: 60vh;
+  min-height: fit-content;
+  margin: 0;
 }
 
 section.message-container {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  width: 355px;
+  width: 100%;
+  max-width: 355px;
   min-height: 150px;
   color: #F9F4DA;
 }
@@ -84,7 +91,7 @@ section > div.status.incorrect {
 }
 
 section.languages {
-  width: 290px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -121,6 +128,7 @@ section.word > span {
   width: 40px;
   color: #F9F4DA;
   border-bottom: 1px inset #F9F4DA;
+  border: 1px solid orange;
 }
 
 section.word > span.wrong {
@@ -132,7 +140,7 @@ section.keyboard {
   flex-wrap: wrap;
   justify-content: center;
   gap: 6px;
-  width: 480px;
+  width: 100%;
   margin-top: 4rem;
 }
 
@@ -180,4 +188,8 @@ button.new-game {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
 }
